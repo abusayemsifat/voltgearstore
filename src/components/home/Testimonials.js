@@ -17,7 +17,7 @@ const testimonials = [
     name: 'Sarah Chen',
     role: 'Software Developer',
     image: 'https://images.unsplash.com/photo-1494790108777-2961285f7c6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    content: 'Best mechanical keyboard I've ever used. The switches are smooth and the RGB customization is perfect.',
+    content: "Best mechanical keyboard I've ever used. The switches are smooth and the RGB customization is perfect.",
     rating: 5,
   },
   {

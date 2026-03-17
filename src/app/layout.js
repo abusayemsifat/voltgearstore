@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from 'react-hot-toast';
 import AuthProvider from '@/components/AuthProvider';
 import LenisProvider from '@/components/LenisProvider';
+import ScrollToTop from '@/components/ui/ScrollToTop';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <LenisProvider>
             {children}
+            <ScrollToTop />
             <Toaster 
               position="bottom-right"
               toastOptions={{
