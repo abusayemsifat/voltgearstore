@@ -1,7 +1,4 @@
-'use client'
-
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+'use client';
 
 export default function Input({
   label,
@@ -13,10 +10,7 @@ export default function Input({
   error = '',
   required = false,
   className = '',
-  ...props
 }) {
-  const [touched, setTouched] = useState(false)
-
   return (
     <div className="mb-4">
       {label && (
@@ -30,24 +24,13 @@ export default function Input({
         name={name}
         value={value}
         onChange={onChange}
-        onBlur={() => setTouched(true)}
         placeholder={placeholder}
         required={required}
-        className={`input-field ${error && touched ? 'border-red-500 focus:ring-red-500' : ''} ${className}`}
-        {...props}
+        className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 ${
+          error ? 'border-red-500' : 'border-gray-300'
+        } ${className}`}
       />
-      <AnimatePresence>
-        {error && touched && (
-          <motion.p
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="mt-1 text-sm text-red-500"
-          >
-            {error}
-          </motion.p>
-        )}
-      </AnimatePresence>
+      {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
     </div>
-  )
+  );
 }
