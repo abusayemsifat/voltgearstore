@@ -1,31 +1,21 @@
-# Voltgear - Modern Gadgets Store
+# ⚡ Voltgear — Next-Gen Gadget Commerce
 
-![Voltgear Logo](https://via.placeholder.com/200x80?text=Voltgear)
+Voltgear is a modern e-commerce storefront built with the **Next.js 14 App Router**. It focuses on server-side efficiency, SEO optimization, and a minimalist aesthetic for tech enthusiasts.
 
-Voltgear is a modern e-commerce platform for tech gadgets built with Next.js App Router. It features a beautiful UI with smooth animations, authentication, and complete product management functionality.
+### 🛠️ Featured Capabilities
+- **Next.js 14 Architecture:** Utilizes Server Components for faster initial page loads and Client Components for interactive UI elements like the GSAP hero section.
+- **NextAuth.js Integration:** Robust authentication supporting both Google OAuth 2.0 and manual Credential providers with JWT-based sessions.
+- **Admin Command Center:** A protected management suite allowing admins to perform real-time inventory updates (Add/Delete products) with instant toast notifications.
+- **Smooth Interaction:** Integration of **Lenis** smooth scrolling and **Framer Motion** card-hover effects to provide a premium "Apple-style" browsing experience.
+- **Database Logic:** Built with **Mongoose** for structured data modeling, ensuring type-safe interactions with MongoDB Atlas.
 
-## 🚀 Features
+### 🚀 Technical Challenges Overcome
+- **Dependency Resolution:** Solved versioning conflicts between `eslint-config-next` and React 18 using `--legacy-peer-deps`.
+- **Hybrid Scrolling:** Resolved conflicts between Lenis smooth scrolling and native CSS scroll-behavior to ensure consistent performance across all browsers.
+- **API Connectivity:** Debugged MongoDB connection string issues specifically related to Vercel's environment variable injection.
 
-- 🔐 Authentication with NextAuth.js (Google + Credentials)
-- 🛍️ Product listing with search and category filters
-- 📱 Fully responsive design
-- ✨ Smooth animations with Framer Motion & GSAP
-- 🎯 Protected routes for product management
-- 📝 Add, view, and delete products
-- 🎨 Modern UI with Tailwind CSS
-- 🔄 Smooth scrolling with Lenis
-- 🍞 Toast notifications
-- 📊 MongoDB integration
-
-## 🛠️ Tech Stack
-
-- **Framework:** Next.js 14 (App Router)
-- **Authentication:** NextAuth.js
-- **Database:** MongoDB with Mongoose
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion, GSAP, Lenis
-- **Icons:** React Icons
-- **Notifications:** React Hot Toast
-- **Deployment:** Vercel
-
-## 📁 Project Structure
+### ⚙️ Tech Stack
+- **Framework:** Next.js 14.2 (App Router).
+- **Auth:** NextAuth.js.
+- **Database:** MongoDB & Mongoose.
+- **Animation:** GSAP & Framer Motion.
