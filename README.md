@@ -6,7 +6,7 @@ Voltgear is a modern e-commerce storefront built with the **Next.js 14 App Route
 - **Next.js 14 Architecture:** Utilizes Server Components for faster initial page loads and Client Components for interactive UI elements like the GSAP hero section.
 - **NextAuth.js Integration:** Robust authentication supporting both Google OAuth 2.0 and manual Credential providers with JWT-based sessions.
 - **Admin Command Center:** A protected management suite allowing admins to perform real-time inventory updates (Add/Delete products) with instant toast notifications.
-- **Smooth Interaction:** Integration of **Lenis** smooth scrolling and **Framer Motion** card-hover effects to provide a premium "Apple-style" browsing experience.
+- **Smooth Interaction:** Integration of **Lenis** smooth scrolling and **Framer Motion** card-hover effects to provide a premium browsing experience.
 - **Database Logic:** Built with **Mongoose** for structured data modeling, ensuring type-safe interactions with MongoDB Atlas.
 
 ### 🚀 Technical Challenges Overcome
